@@ -84,7 +84,7 @@ html, body, #root {
 }
 
 .welcome-dr-img{
-  width: 400px;
+  width: 300px;
   animation: pendulum 1.5s linear infinite;  
 }
 
@@ -110,7 +110,7 @@ html, body, #root {
 }
 
 .gene-img {
-  width: 400px;
+  width: 300px;
   animation: shake 0.05s linear infinite;
 }
 
@@ -136,7 +136,7 @@ html, body, #root {
 }
 
 .dr-love-img {
-  width: 400px;
+  width: 300px;
   filter: 
     drop-shadow(0 0 1rem #ff7300) /* Base orange glow */
     drop-shadow(0 0 2rem #ff0000) /* Red glow */
