@@ -1,5 +1,4 @@
 .finger-button-two {
-  margin-bottom: 2%; /* Slight increase for better spacing */
   background-color: inherit;
   border: none;
   padding: 15px 25px; /* Larger padding for easier tapping */
@@ -64,3 +63,5 @@
     font-size: 4rem; /* Larger icon size on mobile */
   }
 }
+
+.finger-button-two-contain

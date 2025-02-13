@@ -1,28 +1,37 @@
-import { useRef } from "react";
+import { useState } from "react";
 import "../styles/TouchButtonTwo.css";
 
 function TouchButtonTwo({ touchButtonTwoToggler }) {
-  const holdTimer = useRef(null);
+  const [progressTwo, setProgressTwo] = useState(0);
 
-  const handleTouchStart = () => {
-    holdTimer.current = setTimeout(() => {
-      touchButtonTwoToggler(); // Trigger only if held for 1 sec
-    }, 3000);
-  };
+  const handleTouchTwo = () => {
+    setProgressTwo(0); // Reset progress
+    let currentProgressTwo = 0;
 
-  const handleTouchEnd = () => {
-    clearTimeout(holdTimer.current); // Cancel if released early
+    const interval = setInterval(() => {
+      currentProgressTwo += 10; // Increase by 10% every 100ms
+      setProgressTwo(currentProgressTwo);
+
+      if (currentProgressTwo >= 100) {
+        clearInterval(interval);
+        touchButtonTwoToggler(); // Trigger action when full
+      }
+    }, 100);
   };
 
   return (
-    <button
-      className="finger-button-two"
-      onTouchStart={handleTouchStart}
-      onTouchEnd={handleTouchEnd}
-      aria-label="Toggle Fingerprint"
-    >
-      <i className="fa-solid fa-fingerprint finger-two"></i>
-    </button>
+    <div className="finger-button-two-container">
+      <div className="progress-bar-two">
+        <div className="progress-fill-two" style={{ width: `${progressTwo}%` }}></div>
+      </div>
+      <button
+        className="finger-button-two"
+        onTouchStart={handleTouchTwo} // No more touch hold needed
+        aria-label="Toggle Fingerprint"
+      >
+        <i className="fa-solid fa-fingerprint finger-two"></i>
+      </button>
+    </div>
   );
 }
 
