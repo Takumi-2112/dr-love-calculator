@@ -40,7 +40,7 @@ html, body, #root {
 }
 
 .title {
-  margin-left: 105%;
+  margin-left: 115%;
   transform: rotate(-90deg);
   color: #ffffff;
   font-size: 2rem;
@@ -74,7 +74,7 @@ html, body, #root {
 }
 
 .welcome-dr-div{
-  margin-right: 45%;
+  margin-right: 35%;
   width: 100%;
   min-height: 400px;
   display: flex;
@@ -100,7 +100,7 @@ html, body, #root {
 } 
 
 .gene-div{
-  margin-right: 45%;
+  margin-right: 35%;
   width: 100%;
   min-height: 400px;
   display: flex;
@@ -126,7 +126,7 @@ html, body, #root {
 }
 
 .dr-love-div{
-  margin-right: 45%;
+  margin-right: 35%;
   width: 100%;
   min-height: 400px;
   display: flex;
