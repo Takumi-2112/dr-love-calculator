@@ -41,7 +41,7 @@ html, body, #root {
 }
 
 .title {
-  margin-left: 105%;
+  margin-left: 90%;
   transform: rotate(-90deg);
   color: #ffffff;
   font-size: 2rem;
