@@ -29,7 +29,7 @@ function App() {
       <TouchButtonOne touchButtonOneToggler={touchButtonOneToggler}/>
       <div className="content-div">  
         <div className='title-div'>
-          <h1 className='title'>DR LOVE'S VDAY CALCULATOR</h1>
+          <h1 className='title'>DR LOVE'S <span className='vday'>VDAY</span> CALCULATOR</h1>
         </div>
         {touchButtonOne === 0 && touchButtonTwo === 0 ? <div className='welcome-dr-div'><img className="welcome-dr-img" src={welcomeDr} alt="" /></div> : null}
         {touchButtonOne === 1 && touchButtonTwo === 0 ? <div className='welcome-dr-div'><img className="welcome-dr-img" src={welcomeDr} alt="" /></div> : null}
@@ -40,8 +40,4 @@ function App() {
         {touchButtonOne > 1 && touchButtonTwo > 1 ? <div className='dr-love-div'><img className="dr-love-img" src={drLove} alt="" /></div> : null}
       </div>
       <TouchButtonTwo touchButtonTwoToggler={touchButtonTwoToggler}/>
-    </div>
-  );
-}
-
-export default App;
+    </div

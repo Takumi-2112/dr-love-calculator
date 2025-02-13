@@ -43,15 +43,15 @@
 
 @keyframes pulse-down-green {
   0% {
-    transform: rotate(180deg) scale(2);
+    transform: rotate(180deg) scale(2.5);
     color: #00b900;
   }
   50% {
-    transform: rotate(180deg) scale(2);
+    transform: rotate(180deg) scale(2.5);
     color: #ffffff;
   }
   100% {
-    transform: rotate(180deg) scale(2);
+    transform: rotate(180deg) scale(2.5);
     color: #00b900;
   }
 }
