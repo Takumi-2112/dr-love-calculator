@@ -1,16 +1,22 @@
 .finger-button-one {
-  margin-top: 3%;
+  margin-top: 5%;
   background-color: inherit;
   border: none;
+  padding: 15px 25px; /* Increased padding for easier tapping */
+  border-radius: 50%;  /* Make button circular */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  touch-action: manipulation; /* Allow for smooth touch interaction */
 }
 
-.finger-one{
+.finger-one {
   font-size: 3rem;
   color: #e10000;
   cursor: pointer;
   animation: pulse-down 2s infinite;
   filter: drop-shadow(0 0 1rem #ffffff);
-  touch-action: manipulation;
+  transition: transform 0.2s ease, color 0.3s ease;
 }
 
 @keyframes pulse-down {
@@ -33,8 +39,6 @@
   transform: scale(2);
   animation: pulse-down-green 2s infinite; 
   filter: drop-shadow(0 0 1.5rem #ffffff);
-  filter: drop-shadow(0 0 1.5rem #ffffff);
-  filter: drop-shadow(0 0 1.5rem #ffffff);
 }
 
 @keyframes pulse-down-green {
@@ -52,6 +56,14 @@
   }
 }
 
+/* Mobile-friendly Styles */
 @media (min-width: 280px) and (max-width: 480px) {
+  .finger-button-one {
+    padding: 25px 35px; /* Make the button even bigger on mobile */
+    font-size: 3.5rem; /* Increase font size for mobile screens */
+  }
 
+  .finger-one {
+    font-size: 4rem; /* Larger icon on mobile */
+  }
 }

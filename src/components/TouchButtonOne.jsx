@@ -1,7 +1,14 @@
 import '../styles/TouchButtonOne.css';
-function TouchButtonOne( { touchButtonOneToggler } ) {
+
+function TouchButtonOne({ touchButtonOneToggler }) {
   return (
-    <button className="finger-button-one" onClick={touchButtonOneToggler}><i className="fa-solid fa-fingerprint finger-one"></i></button>
+    <button 
+      className="finger-button-one" 
+      onClick={touchButtonOneToggler} 
+      aria-label="Toggle Fingerprint"
+    >
+      <i className="fa-solid fa-fingerprint finger-one"></i>
+    </button>
   );
 }
 
