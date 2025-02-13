@@ -1,16 +1,22 @@
 .finger-button-two {
-  margin-bottom: 3%;
+  margin-bottom: 5%; /* Slight increase for better spacing */
   background-color: inherit;
   border: none;
+  padding: 15px 25px; /* Larger padding for easier tapping */
+  border-radius: 50%;  /* Circular button for better aesthetics */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  touch-action: manipulation; /* Allow for smooth touch interaction */
 }
 
-.finger-two{
+.finger-two {
   font-size: 3rem;
   color: #e10000;
   cursor: pointer;
   animation: pulse 2s infinite;
   filter: drop-shadow(0 0 1rem #ffffff);
-  touch-action: manipulation;
+  transition: transform 0.2s ease, color 0.3s ease;
 }
 
 @keyframes pulse {
@@ -47,6 +53,14 @@
   }
 }
 
+/* Mobile-friendly Styles */
 @media (min-width: 280px) and (max-width: 480px) {
+  .finger-button-two {
+    padding: 25px 35px; /* Make button larger for mobile touch */
+    font-size: 3.5rem; /* Larger font size for mobile screens */
+  }
 
+  .finger-two {
+    font-size: 4rem; /* Larger icon size on mobile */
+  }
 }
