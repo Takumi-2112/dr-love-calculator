@@ -116,3 +116,47 @@ html, body, #root {
 @keyframes shake {
   0% {
     transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.dr-love-div{
+  margin-right: 50%;
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.dr-love-img {
+  width: 400px;
+  filter: 
+    drop-shadow(0 0 1rem #ff7300) /* Base orange glow */
+    drop-shadow(0 0 2rem #ff0000) /* Red glow */
+    drop-shadow(0 0 3rem #ffa200); /* White glow for extra depth */
+  animation: spinning-pulse 3s linear infinite;
+}
+
+@keyframes spinning-pulse {
+  0% {
+    transform: rotate(0deg) scale(0.7);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.3);
+  }
+  100% {
+    transform: rotate(360deg) scale(0.7);
+  }
+}
+
+
+@media (min-width: 280px) and (max-width: 480px) {
+
+
+}
