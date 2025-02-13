@@ -10,4 +10,20 @@ function TouchButtonTwo({ touchButtonTwoToggler }) {
     }, 3000);
   };
 
-  const handleTouchEnd = () 
+  const handleTouchEnd = () => {
+    clearTimeout(holdTimer.current); // Cancel if released early
+  };
+
+  return (
+    <button
+      className="finger-button-two"
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
+      aria-label="Toggle Fingerprint"
+    >
+      <i className="fa-solid fa-fingerprint finger-two"></i>
+    </button>
+  );
+}
+
+export default TouchButtonTwo;

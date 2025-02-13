@@ -75,7 +75,7 @@
   width: 120px; /* Adjust as needed */
 }
 
-.progress-bar {
+.progress-bar-one {
   width: 100%;
   height: 5px;
   background: rgba(255, 255, 255, 0.3);
@@ -84,7 +84,7 @@
   overflow: hidden;
 }
 
-.progress-fill {
+.progress-fill-one {
   height: 100%;
   width: 0%;
   background: #28ff61;

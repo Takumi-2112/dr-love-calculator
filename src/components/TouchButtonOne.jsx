@@ -42,8 +42,8 @@ function TouchButtonOne({ touchButtonOneToggler, touchButtonOne }) {
       >
         <i className="fa-solid fa-fingerprint finger-one"></i>
       </button>
-      <div className="progress-bar">
-        <div className="progress-fill" style={{ width: `${progress}%` }}></div>
+      <div className="progress-bar-one">
+        <div className="progress-fill-one" style={{ width: `${progress}%` }}></div>
       </div>
     </div>
   );
