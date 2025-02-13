@@ -41,7 +41,7 @@ html, body, #root {
 }
 
 .title {
-  margin-left: 90%;
+  margin-left: 60%;
   transform: rotate(-90deg);
   color: #ffffff;
   font-size: 2rem;
@@ -75,7 +75,7 @@ html, body, #root {
 }
 
 .welcome-dr-div{
-  margin-right: 35%;
+  margin-right: 15%;
   width: 100%;
   min-height: 400px;
   display: flex;
@@ -90,18 +90,18 @@ html, body, #root {
 
 @keyframes pendulum {
   0% {
-    transform: rotate(0deg);
+    transform: rotate(-90deg);
   }
   50% {
-    transform: rotate(15deg);
+    transform: rotate(-95deg);
   }
   100% {
-    transform: rotate(0deg);
+    transform: rotate(-90deg);
   }
 } 
 
 .gene-div{
-  margin-right: 35%;
+  margin-right: 15%;
   width: 100%;
   min-height: 400px;
   display: flex;
@@ -116,18 +116,18 @@ html, body, #root {
 
 @keyframes shake {
   0% {
-    transform: rotate(0deg);
+    transform: rotate(-90deg);
   }
   50% {
-    transform: rotate(5deg);
+    transform: rotate(-95deg);
   }
   100% {
-    transform: rotate(0deg);
+    transform: rotate(-90deg);
   }
 }
 
 .dr-love-div{
-  margin-right: 35%;
+  margin-right: 15%;
   width: 100%;
   min-height: 400px;
   display: flex;
