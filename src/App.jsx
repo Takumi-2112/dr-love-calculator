@@ -39,4 +39,9 @@ function App() {
         {touchButtonOne === 1 && touchButtonTwo > 1 ? <div className='gene-div'><img className="gene-img" src={drGene} alt="" /></div> : null}
         {touchButtonOne > 1 && touchButtonTwo > 1 ? <div className='dr-love-div'><img className="dr-love-img" src={drLove} alt="" /></div> : null}
       </div>
-      <TouchButtonTwo touchButtonTwoToggler={to
+      <TouchButtonTwo touchButtonTwoToggler={touchButtonTwoToggler} touchButtonTwo={touchButtonTwo}/>
+    </div>
+  );
+}
+
+export default App;

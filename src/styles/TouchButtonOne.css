@@ -67,4 +67,25 @@
   }
 }
 
-.finger-but
+.finger-button-one-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px; /* Adjust as needed */
+}
+
+.progress-bar-one {
+  width: 100%;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  margin-top: 5px;
+  overflow: hidden;
+}
+
+.progress-fill-one {
+  height: 100%;
+  width: 0%;
+  background: #28ff61;
+  transition: width 0.1s linear;
+}
