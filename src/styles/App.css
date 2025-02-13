@@ -41,7 +41,8 @@ html, body, #root {
 }
 
 .title {
-  margin-left: 40%;
+  position: fixed;
+  margin-left: 1%;
   transform: rotate(-90deg);
   color: #ffffff;
   font-size: 2rem;
