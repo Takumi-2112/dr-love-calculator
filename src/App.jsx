@@ -1,35 +1,47 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState, useEffect } from 'react';
+import './styles/App.css';
+import welcomeDr from '../public/welcome-dr.png'; 
+import drGene from '../public/dr-gene.png';
+import drLove from '../public/dr-love.png';
+import TouchButtonOne from './components/TouchButtonOne';
+import TouchButtonTwo from './components/TouchButtonTwo';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [touchButtonOne, setTouchButtonOne] = useState(0);
+  const [touchButtonTwo, setTouchButtonTwo] = useState(0);
+
+  useEffect(() => {
+    console.log(`Touch Button One state updated to: ${touchButtonOne}`);
+    console.log(`Touch Button Two state updated to: ${touchButtonTwo}`);
+
+  }, [touchButtonOne, touchButtonTwo]);
+
+  const touchButtonOneToggler = () => {
+    setTouchButtonOne(prevState => prevState + 1);
+  };
+
+  const touchButtonTwoToggler = () => {
+    setTouchButtonTwo(prevState => prevState + 1);
+  };
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="app-master">
+      <TouchButtonOne touchButtonOneToggler={touchButtonOneToggler}/>
+      <div className="content-div">  
+        <div className='title-div'>
+          <h1 className='title'>DR LOVE'S VDAY CALCULATOR</h1>
+        </div>
+        {touchButtonOne === 0 && touchButtonTwo === 0 ? <div className='welcome-dr-div'><img className="welcome-dr-img" src={welcomeDr} alt="" /></div> : null}
+        {touchButtonOne === 1 && touchButtonTwo === 0 ? <div className='welcome-dr-div'><img className="welcome-dr-img" src={welcomeDr} alt="" /></div> : null}
+        {touchButtonOne === 0 && touchButtonTwo === 1 ? <div className='welcome-dr-div'><img className="welcome-dr-img" src={welcomeDr} alt="" /></div> : null}
+        {touchButtonOne === 1 && touchButtonTwo === 1 ? <div className='gene-div'><img className="gene-img" src={drGene} alt="" /></div> : null}
+        {touchButtonOne > 1 && touchButtonTwo === 1 ? <div className='gene-div'><img className="gene-img" src={drGene} alt="" /></div> : null}
+        {touchButtonOne === 1 && touchButtonTwo > 1 ? <div className='gene-div'><img className="gene-img" src={drGene} alt="" /></div> : null}
+        {touchButtonOne > 1 && touchButtonTwo > 1 ? <div className='dr-love-div'><img className="dr-love-img" src={drLove} alt="" /></div> : null}
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+      <TouchButtonTwo touchButtonTwoToggler={touchButtonTwoToggler}/>
+    </div>
+  );
 }
 
-export default App
+export default App;
