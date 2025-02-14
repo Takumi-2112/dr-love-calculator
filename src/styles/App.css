@@ -142,7 +142,7 @@ html, body, #root {
     drop-shadow(0 0 1rem #ff7300) /* Base orange glow */
     drop-shadow(0 0 2rem #ff0000) /* Red glow */
     drop-shadow(0 0 3rem #ffa200); /* White glow for extra depth */
-  animation: spinning-pulse 3s linear infinite;
+  animation: spinning-pulse 2s linear infinite;
 }
 
 @keyframes spinning-pulse {
