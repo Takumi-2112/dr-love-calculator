@@ -6,7 +6,7 @@ html, body, #root {
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents repeating */
   width: 100vw; /* Full width */
-  height: 95vh; /* Full height */
+  height: 100vh; /* Full height */
   display: flex;
   align-items: center;
   justify-content: center;
