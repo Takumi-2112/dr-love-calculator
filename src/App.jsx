@@ -33,7 +33,7 @@ function App() {
 
   return (
     <div className="app-master">
-      {vdayModal && <VdayModal vdayModal={vdayModal} vdayModalToggler={vdayModalToggler}/>}
+      {vdayModal && <VdayModal touchButtonOne={touchButtonOne} touchButtonTwo={touchButtonTwo} vdayModalToggler={vdayModalToggler}/>}
       <TouchButtonOne touchButtonOneToggler={touchButtonOneToggler} touchButtonOne={touchButtonOne}/>
       <div className="content-div">  
         <div className='title-div'>
