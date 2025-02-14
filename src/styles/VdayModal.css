@@ -36,7 +36,6 @@
   border-radius: 20px;
   border: 15px solid #ff0c0c;
   font-family: "Chewy", serif;
-  text-shadow: 0 0 1rem #ff7300, 0 0 1rem #ff0000;
   width: 70%;
   z-index: 1001;
   position: fixed;
@@ -54,6 +53,11 @@
   width: 100%;
 }
 
+.invisible{
+  color: #ff50b9;
+  filter: drop-shadow(0 0 0.4rem #ff50b9);
+}
+
 .modal-assessment-div{
   display: flex;
   flex-direction: column;
@@ -63,6 +67,7 @@
   font-size: 0.8rem;
   text-align: center;
   color: #ffffff;
+  text-shadow: 0 0 1rem #ff006f, 0 0 1rem #ff006f;
 }
 
 .close-modal{
