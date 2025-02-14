@@ -3,10 +3,13 @@ import './styles/App.css';
 import welcomeDr from '../public/welcome-dr.png'; 
 import drGene from '../public/dr-gene.png';
 import drLove from '../public/dr-love.png';
+import VdayModal from './components/VdayModal';
 import TouchButtonOne from './components/TouchButtonOne';
 import TouchButtonTwo from './components/TouchButtonTwo';
 
+
 function App() {
+  const [vdayModal, setVdayModal] = useState(true);
   const [touchButtonOne, setTouchButtonOne] = useState(0);
   const [touchButtonTwo, setTouchButtonTwo] = useState(0);
 
@@ -15,6 +18,10 @@ function App() {
     console.log(`Touch Button Two state updated to: ${touchButtonTwo}`);
 
   }, [touchButtonOne, touchButtonTwo]);
+
+  const vdayModalToggler = () => {
+    setVdayModal(prevState => !prevState);
+  };
 
   const touchButtonOneToggler = () => {
     setTouchButtonOne(prevState => prevState + 1);
@@ -26,6 +33,7 @@ function App() {
 
   return (
     <div className="app-master">
+      {vdayModal && <VdayModal vdayModal={vdayModal} vdayModalToggler={vdayModalToggler}/>}
       <TouchButtonOne touchButtonOneToggler={touchButtonOneToggler} touchButtonOne={touchButtonOne}/>
       <div className="content-div">  
         <div className='title-div'>
