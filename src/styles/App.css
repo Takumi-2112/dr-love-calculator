@@ -6,7 +6,7 @@ html, body, #root {
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents repeating */
   width: 100vw; /* Full width */
-  height: 100vh; /* Full height */
+  height: 95vh; /* Full height */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -76,7 +76,7 @@ html, body, #root {
 }
 
 .welcome-dr-div{
-  margin-left: 3%;
+  margin-left: 5%;
   width: 100%;
   min-height: 400px;
   display: flex;
@@ -158,4 +158,7 @@ html, body, #root {
 }
 
 
-@media (min-width: 280px) and
+@media (min-width: 280px) and (max-width: 480px) {
+
+
+}
