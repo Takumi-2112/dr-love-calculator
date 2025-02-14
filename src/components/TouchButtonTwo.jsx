@@ -16,7 +16,7 @@ function TouchButtonTwo({ touchButtonTwoToggler }) {
         clearInterval(interval);
         touchButtonTwoToggler(); // Trigger action when full
       }
-    }, 200);
+    }, 125);
   };
 
   return (
