@@ -1,4 +1,6 @@
-import '../styles/VdayModal.css';
+import "../styles/VdayModal.css";
+import gengar from "../assets/gengar.png";
+import kirby from "../assets/kirby.png";
 
 function VdayModal() {
   return (
@@ -6,13 +8,12 @@ function VdayModal() {
       <div className="modal-overlay">
         <div className="modal-content">
           <div className="modal-close-container">
+            <h3>k</h3>
+            <h2 className="login-title"><img className="gengar" src={gengar} alt="" />1000% MATCH BABAY <img className="kirby" src={kirby} alt="" /></h2>
             <i className="fa-solid fa-xmark close-modal"></i>
           </div>
-          <h2 className="login-title">LOGIN</h2>
-          <div className="modal-interact">
-            <button className="login-button">
-              Login
-            </button>
+          <div className="modal-assessment-div">
+            <h2>I WAS MADE FOR LOVIN YOU BABY... YOU REALLY GET MY LOVE GUN RUNNIN HOT! WILL YOU BE MINE?</h2>
           </div>
         </div>
       </div>

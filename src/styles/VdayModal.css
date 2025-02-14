@@ -30,12 +30,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background-image: linear-gradient(to bottom, #1c1c1c, #000000);
+  justify-content: space-between;
+  background-color:#ff50b9; 
   padding: 5% 1%;
   border-radius: 20px;
-  border: 5px solid #89daff;
-  font-family: "Montserrat", sans-serif;
+  border: 15px solid #ff0c0c;
+  font-family: "Chewy", serif;
+  text-shadow: 0 0 1rem #ff7300, 0 0 1rem #ff0000;
   width: 55%;
   z-index: 1001;
   position: fixed;
@@ -46,9 +47,22 @@
 }
 
 .modal-close-container{
+  align-self: flex-end; 
   display: flex;
-  justify-content: flex-end;
+  align-items: start;
+  justify-content: space-between;
   width: 100%;
+}
+
+.modal-assessment-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 0.8rem;
+  text-align: center;
+  color: #ffffff;
 }
 
 .close-modal{
@@ -65,90 +79,25 @@
 }
 
 .login-title{
+  align-self: flex-start;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "League Spartan", sans-serif;
+  font-family: "Chewy", serif;
+  text-shadow: 0 0 1rem #ff7300, 0 0 1rem #ff0000;
   font-size: 2rem;
-  font-style: italic;
-  filter: drop-shadow(0 0 1rem #89daff);
-}
-
-.modal-lightning{
-  width: 30px;
-  filter: drop-shadow(0 0 1rem #ffffff);
-  margin-bottom: 5%;
-}
-
-
-form{
-  width: 100%;
-}
-
-.modal-inputs{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  width: 100%;
-  margin: 5% 0 10% 0;
-}
-
-.modal-inputs input{
-  width: 60%;
-  padding: 2% 1%;
-  border: 2px solid #89daff;
-  border-radius: 20px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 1.2rem;
-  color: white;
-  background-color: #1c1c1c;  
-  padding: 2% 2.5%;
-}
-
-.modal-interact{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-
-.login-button{
-  width: 20%;
-  background-color: #00aeff;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  color: white;
-  border: 2.5px solid #00aeff;
-  padding: 1.5% 0; 
-  margin-bottom: 2%;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: 0.25s;
-}
-
-.login-button:hover{
-  background-color: #ffffff;
-  color: #00aeff;
-  filter: drop-shadow(0 0 0.4rem #00aeff);
-}
-
-.sign-up-here{
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  color: #00aeff;
-  font-size: 1rem;
-  margin-top: 5%;
-  cursor: pointer;
-  transition: 0.25s;
-}
-
-.sign-up-here:hover{
   color: #ffffff;
-  filter: drop-shadow(0 0 0.4rem #00aeff);
+  white-space: nowrap; /* Prevents wrapping */
+}
+
+.gengar{
+  width: 50px;
+  margin-right: 5%;
+}
+
+.kirby{
+  width: 50px;
+  margin-left: 5%;
 }
 
 /* Fade-in animation for modal */
